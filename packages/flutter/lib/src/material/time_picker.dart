@@ -1706,7 +1706,6 @@ class _TimePickerInputState extends State<_TimePickerInput> with RestorationMixi
     if (newHour != null) {
       _selectedTime.value = TimeOfDay(hour: newHour, minute: _selectedTime.value.minute);
       _TimePickerModel.setSelectedTime(context, _selectedTime.value);
-      FocusScope.of(context).requestFocus();
     }
   }
 
